@@ -1,10 +1,10 @@
 import "./styles.css";
-import { Hello } from "./Hello";
+import { Machine } from "./Section3/Machine";
 export class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Hello />
+        <Machine s1="X" s2="X" s3="X" />
       </div>
     );
   }
