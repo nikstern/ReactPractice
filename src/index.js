@@ -1,12 +1,10 @@
-import { StrictMode } from "react";
+import react from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+class Hello extends React.Component {
+  render() {
+    return <h1>Hello World!</h1>;
+  }
+}
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  rootElement
-);
+ReactDOM.render(<Hello />, document.getElementById("root"));
