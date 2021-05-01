@@ -1,10 +1,15 @@
 import "./styles.css";
-import { Machine } from "./Section3/Machine";
+import { choice, remove } from "./Section4/helpers";
+import foods from "./Section4/foods";
 export class App extends React.Component {
   render() {
+    const myFood = choice(foods);
     return (
       <div className="App">
-        <Machine s1="X" s2="X" s3="X" />
+        <p> I'd like one {myFood} please </p>
+        <p> Here you go: {myFood} </p>
+        <p> Delicious, may I have another </p>
+        <p> Sorry we only have {remove(foods, myFood).join(" ")} left </p>
       </div>
     );
   }
