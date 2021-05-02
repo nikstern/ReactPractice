@@ -1,7 +1,7 @@
 .Pokecard {
   width: 30%;
   height: min-content;
-  background-color: #fddfa7;
+  background-color: #cecece;
   border-radius: 5%;
 }
 
@@ -17,7 +17,7 @@
   width: 90%;
   height: 90%;
   border-radius: 50%;
-  background-color: oldlace;
+  background-color: rgb(243, 241, 237);
   margin: 0 5% 5%;
 }
 
@@ -33,10 +33,71 @@
   padding-bottom: 5%;
 }
 
-.Grass {
+.Bug {
   background-color: #92c76e;
 }
 
-.Grass-img {
+.Bug .Pokecard-name {
+  color: rgb(2, 49, 2);
+}
+
+.Bug-img {
   background-color: #b8dd9f;
+}
+
+.Fire {
+  background-color: #ec4300;
+}
+
+.Fire .Pokecard-name {
+  color: #410101;
+}
+
+.Fire-img {
+  background-color: #ee9f80;
+}
+
+.Water {
+  background-color: rgb(6, 164, 204);
+}
+
+.Water .Pokecard-name {
+  color: rgb(2, 37, 60);
+}
+
+.Water-img {
+  background-color: rgb(173, 236, 252);
+}
+
+.Poison {
+  background-color: purple;
+  color: rgb(228, 179, 245);
+}
+
+.Poison-img {
+  background-color: rgb(245, 158, 245);
+}
+
+.Flying {
+  background-color: rgb(201, 255, 250);
+}
+
+.Flying .Pokecard-name {
+  color: #04393d;
+}
+
+.Flying-img {
+  background-color: rgb(231, 249, 250);
+}
+
+.Electric {
+  background-color: rgb(253, 253, 25);
+}
+
+.Electric .Pokecard-name {
+  color: rgb(102, 104, 3);
+}
+
+.Electric-img {
+  background-color: rgb(252, 252, 153);
 }

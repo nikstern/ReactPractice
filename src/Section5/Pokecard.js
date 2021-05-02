@@ -7,16 +7,16 @@ class Pokecard extends Component {
     const cardClass = `Pokecard ${this.props.type}`;
     const imgClass = `Pokecard-img ${this.props.type}-img`;
     return (
-      <article className={cardClass}>
+      <div className={cardClass}>
         <header className="Pokecard-header">
           <h2 className="Pokecard-name">{this.props.name}</h2>
         </header>
-        <img src={pokeImg} className="Pokecard-img Grass-img" />
+        <img src={pokeImg} className={imgClass} alt={this.props.name} />
         <footer className="Pokecard-footer">
           <span className="Pokecard-type">{this.props.type} Type</span>
           <span className="Pokecard-exp">{this.props.exp} XP </span>
         </footer>
-      </article>
+      </div>
     );
   }
 }

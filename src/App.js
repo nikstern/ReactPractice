@@ -1,7 +1,7 @@
 import "./styles.css";
-import Pokecard from "./Section5/Pokecard";
+import Pokedex from "./Section5/Pokedex";
 export class App extends React.Component {
   render() {
-    return <Pokecard id={1} name="Bulbasaur" type="Grass" exp={3} />;
+    return <Pokedex />;
   }
 }
