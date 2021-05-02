@@ -22,9 +22,12 @@
 }
 
 .Pokecard-type {
-  display: block;
-  text-align: center;
-  padding-bottom: 5%;
+  margin-left: 10px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 20%;
+  height: 50px;
 }
 
 .Pokecard-exp {
