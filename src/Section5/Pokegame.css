@@ -1,0 +1,11 @@
+h1 {
+  text-align: center;
+}
+
+.winner {
+  color: green;
+}
+
+.loser {
+  color: red;
+}

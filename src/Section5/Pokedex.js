@@ -14,7 +14,7 @@ class Pokedex extends Component {
         exp={p.base_experience}
       />
     ));
-    return <div> {listItems} </div>;
+    return <div className="Pokedex-cards"> {listItems} </div>;
   }
 }
 

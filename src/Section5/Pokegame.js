@@ -33,9 +33,9 @@ class Pokegame extends Component {
     }
     return (
       <div>
-        <h1>Winning Team: {winningScore}</h1>
+        <h1 className="winner">Winning Team: {winningScore}</h1>
         <Pokedex pokemon={winning} />
-        <h1>Losing Team: {losingScore}</h1>
+        <h1 className="loser">Losing Team: {losingScore}</h1>
         <Pokedex pokemon={losing} />
       </div>
     );
