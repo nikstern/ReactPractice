@@ -1,0 +1,42 @@
+.Pokecard {
+  width: 30%;
+  height: min-content;
+  background-color: #fddfa7;
+  border-radius: 5%;
+}
+
+.Pokecard-header {
+  padding-top: 0.1rem;
+}
+
+.Pokecard-name {
+  text-align: center;
+}
+
+.Pokecard-img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: oldlace;
+  margin: 0 5% 5%;
+}
+
+.Pokecard-type {
+  display: block;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.Pokecard-exp {
+  display: block;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.Grass {
+  background-color: #92c76e;
+}
+
+.Grass-img {
+  background-color: #b8dd9f;
+}
