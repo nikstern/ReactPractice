@@ -23,7 +23,7 @@ class Pokecard extends Component {
         </header>
         <img src={pokeImg} className={imgClass} alt={this.props.name} />
         <footer className="Pokecard-footer">
-          <span className="Pokecard-exp">{this.props.exp} XP </span>
+          <p className="Pokecard-exp">{this.props.exp}</p>
         </footer>
       </div>
     );
