@@ -1,9 +1,9 @@
 import "./styles.css";
 import React, { Component } from "react";
-import Section5App from "./Section5/Section5App";
+import Section6App from "./Section6/Section6App";
 
 export class App extends Component {
   render() {
-    return <Section5App />;
+    return <Section6App />;
   }
 }
