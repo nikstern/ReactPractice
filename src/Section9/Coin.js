@@ -14,7 +14,7 @@ class Coin extends Component {
       <img
         src={src}
         onClick={this.props.onClick}
-        alt={`Dime ${this.props.side}`}
+        alt={`Half Dollar ${this.props.side}`}
       />
     );
   }
