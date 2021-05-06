@@ -20,8 +20,16 @@ class RollDice extends Component {
       die2: randomRange(1, 6),
       rolling: true
     });
+    let id = setInterval((e) => {
+      this.setState({
+        die1: randomRange(1, 6),
+        die2: randomRange(1, 6)
+      });
+    }, 100);
+
     setTimeout((e) => {
       this.setState({ rolling: false });
+      clearInterval(id);
     }, 800);
   }
 
@@ -29,8 +37,8 @@ class RollDice extends Component {
     return (
       <div className="content">
         <div className="dice">
-          <Die value={this.state.die1} />
-          <Die value={this.state.die2} />
+          <Die value={this.state.die1} rolling={this.state.rolling} />
+          <Die value={this.state.die2} rolling={this.state.rolling} />
         </div>
         <Button rolling={this.state.rolling} onClick={this.handleClick} />
       </div>
