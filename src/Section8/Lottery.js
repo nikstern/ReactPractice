@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { randomRange } from "../utils";
 import LotteryBall from "./LotteryBall";
+import "./Lottery.css";
 class Lottery extends Component {
   static defaultProps = {
     balls: 4,
@@ -21,7 +22,10 @@ class Lottery extends Component {
   getNumbers() {
     let values = [];
     for (let i = 0; i < this.props.balls; i++) {
-      let value = randomRange(this.props.rangeMin, this.props.rangeMax);
+      let value;
+      do {
+        value = randomRange(this.props.rangeMin, this.props.rangeMax);
+      } while (values.indexOf(value) !== -1);
       values.push(value);
     }
     return values;
@@ -36,9 +40,9 @@ class Lottery extends Component {
       <LotteryBall value={v} />
     ));
     return (
-      <div>
+      <div className="Lottery">
         <h2>{this.props.title}</h2>
-        <div>{lotteryComponents}</div>
+        <div className="Balls">{lotteryComponents}</div>
         <button onClick={this.setNumbers}>Generate</button>
       </div>
     );

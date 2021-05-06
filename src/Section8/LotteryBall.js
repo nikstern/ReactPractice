@@ -1,4 +1,5 @@
 import { Component } from "react";
+import "./LotteryBall.css";
 class LotteryBall extends Component {
   render() {
     return (

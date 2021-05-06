@@ -1,0 +1,14 @@
+.Ball {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  display: block;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  background-color: #b8b5ff;
+  border-radius: 50%;
+  color: #362e6f;
+  font-size: 2rem;
+  box-shadow: 4px 4px 5px black;
+}
