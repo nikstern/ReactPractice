@@ -1,0 +1,9 @@
+.Square {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
+
+.Square-lit {
+  background-color: grey;
+}
